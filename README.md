@@ -29,13 +29,40 @@ In order to set up and run the project locally, it is neccessary:
 - Add two numbers.
 - Subtract two numbers.
 
-## CI Pipeline Implementation
-
-
 ## Branch Policies and Protection
+- Protected main branch:
+Navigate to Settings > Branches > Branch Protection Rules
 
+- Enable:
+![image](https://github.com/user-attachments/assets/bd3c3d12-6d88-4661-b6f0-ee1dd6f36296)
+This rules picked because: 
+* Code quality assurance: It helps that all changes are vetted for potential issues such as bugs, security vulnerabilities, or poor code.
+* Collaboration: By encouraging teamwork and knowledge sharing, you can see the contributions of other team members when suggesting improvements, pointing out bugs, or identifying best practices.
+* Bug prevention: It helps to catch issues early before they are merged into the main branch.
+* Compliance and accountability: In regulated industries, enforcing reviews ensures a documented approval process.
 
 ## Testing Strategy
+The unittest framework is Python's built-in unit testing library, making it an ideal choice for testing a simple Python project like this calculator. It has very significant key advantages: the standard library, so there is no need for additional installations or dependencies; also automatic test discovery and easy structure/integration into the project. In this particular case also, works seamlessly with Azure DevOps to automate testing in the pipeline.
+
+With this testing framework it is possible for each test method to be executed in isolation, ensuring that the result of one test does not affect the others. The module being tested, with functions add and subtract.
+
+- Test Class: TestCalculator is a subclass of unittest.TestCase, which provides the framework for writing test cases.
+
+- Assertions: self.assertEqual(actual, expected) verifies that the function’s output matches the expected value.
+
+- Running the Tests: The unittest.main() method runs all the test cases when the file is executed directly.
+
+
+## CI Pipeline Implementation
+Pipeline Tool: Azure DevOps
+Triggers: Automatic build on commits to development
+
+![image](https://github.com/user-attachments/assets/b0d1a671-b318-426b-9b28-b06c8d0d08bb)
 
 
 ## Troubleshooting Guide 
+
+Issue: Missing dependencies.
+
+- Verify azure-pipelines.yml syntax.
+- Fill out the form at https://aka.ms/azpipelines-parallelism-request to request free parallelism for your Azure DevOps account.

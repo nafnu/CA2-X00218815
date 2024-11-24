@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# IDE settings (e.g., VSCode, PyCharm)
+.vscode/
+.idea/
+
+
+# Test coverage reports
+coverage/
+
+# Virtual environment
+venv/
+
+# Logs and local configurations
+*.log
+*.env

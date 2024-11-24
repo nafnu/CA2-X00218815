@@ -38,12 +38,12 @@ elif select == 2:
     print(number_1, "-", number_2, "=",
                     subtract(number_1, number_2))
 
-elif select == 3:
-    print(number_1, "*", number_2, "=",
-                    multiply(number_1, number_2))
+#elif select == 3:
+#    print(number_1, "*", number_2, "=",
+#                    multiply(number_1, number_2))
 
-elif select == 4:
-    print(number_1, "/", number_2, "=",
-                    divide(number_1, number_2))
+#elif select == 4:
+#    print(number_1, "/", number_2, "=",
+#                    divide(number_1, number_2))
 else:
     print("Invalid input")

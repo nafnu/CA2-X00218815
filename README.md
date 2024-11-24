@@ -9,14 +9,14 @@ This is a simple calculator application created in Python that supports basic ar
 ## Technologies Used
 - **Python**: Programming language.
 - **unittest**: For testing.
-- **Azure DevOps**: CI/CD pipelin
+- **Azure DevOps**: CI/CD pipeline.
 - **GitHub**: Version control platform for source code management.
 
 ## Local Development Setup
 
 ### Prerequisites
 In order to set up and run the project locally, it is neccessary:
-- **Python** installed.
+- **Python** installed
 - **Git** for version control.
 
 ### Steps to Set Up Locally
